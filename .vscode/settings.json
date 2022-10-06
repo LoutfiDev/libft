@@ -1,4 +1,8 @@
 {
     "42header.email": "soulang.dev@gmail.com",
-    "42header.username": "yloutfi"
+    "42header.username": "yloutfi",
+    "files.associations": {
+        "stdio.h": "c",
+        "__locale": "c"
+    }
 }
