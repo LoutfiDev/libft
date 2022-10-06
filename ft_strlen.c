@@ -3,14 +3,14 @@
 /*                                                        :::      ::::::::   */
 /*   ft_strlen.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
-/*   By: marvin <marvin@student.42.fr>              +#+  +:+       +#+        */
+/*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 17:20:06 by marvin            #+#    #+#             */
-/*   Updated: 2022/10/06 17:20:06 by marvin           ###   ########.fr       */
+/*   Updated: 2022/10/06 21:09:40 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlen (char *str)
+size_t  ft_strlen (char *str)
 {
     size_t len;
 
