@@ -1,26 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memset.c                                        :+:      :+:    :+:   */
+/*   ft_memmove.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 18:15:36 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/07 20:16:39 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/07 18:22:37 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/07 20:18:24 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memset(void *b, int c, size_t len)
+void *ft_memmove(void *dest, const void *src, size_t len)
 {
-    size_t i;
-    char *str;
+	char copy[len];
+	char  *d;
+    char  *s;
+    size_t  i;
 
-    str = (char *)s;
-    i = 0;
-    while(i < n)
+    d = (char *)dest;
+    s = (char *)src;
+	i = 0;
+	while (i < len)
     {
-        str[i] = c;
-        i++;
+      copy[i] = s[i];
+	  i++;
     }
-    return s;
+    i = 0;
+    while (i < len)
+    {
+      d[i] = copy[i];
+      i++;
+    }
+    return dest;
 }

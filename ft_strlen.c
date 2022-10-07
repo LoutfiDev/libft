@@ -6,11 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 17:20:06 by marvin            #+#    #+#             */
-/*   Updated: 2022/10/06 21:09:40 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/07 20:17:07 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t  ft_strlen (char *str)
+size_t  ft_strlen (const char *str)
 {
     size_t len;
 
