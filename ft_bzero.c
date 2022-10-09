@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 21:45:56 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/06 22:44:31 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/08 14:51:25 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,7 +17,7 @@ void ft_bzero(void *s, size_t n)
 
     str = (char*)s;
     i = 0;
-    while(str[i] && i < n)
+    while(i < n)
     {
         str[i] = 0;
         i++;

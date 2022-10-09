@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strchr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 22:45:34 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/09 11:07:36 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/08 16:17:50 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/08 20:25:33 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+char	*ft_strchr(const char *s, int c)
 {
-    char  *d;
-    char  *s;
-    size_t  i;
-    
-    d = (char *)dst;
-    s = (char *)src;
-    i = 0;
-    while (i < n)
-    {
-      d[i] = s[i];
-      i++;
-    }
-    return dst; // must read a bit about OVERLAP
+	int	i;
+	char *str = (char *)s;
+
+	i = 0;
+	if (c == 0)
+		return (str + ft_strlen(str)); // must include library
+	while (str[i])
+	{
+		if (str[i] == c)
+		{
+			return (str + i);
+		}
+		i++;
+	}
+	return (NULL);
 }
+

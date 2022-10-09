@@ -1,28 +1,31 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcpy.c                                        :+:      :+:    :+:   */
+/*   ft_strlcat.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/06 22:45:34 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/09 11:07:36 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/08 15:55:02 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/08 15:59:26 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-void *ft_memcpy(void *dst, const void *src, size_t n)
+size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
 {
-    char  *d;
-    char  *s;
-    size_t  i;
-    
-    d = (char *)dst;
-    s = (char *)src;
-    i = 0;
-    while (i < n)
-    {
-      d[i] = s[i];
-      i++;
-    }
-    return dst; // must read a bit about OVERLAP
+    size_t	i;
+	size_t	lenght;
+	size_t	len;
+
+	i = 0;
+	len = ft_strlen(src);
+	lenght = ft_strlen(dst);
+	if (dstsize == 0 || dstsize <= lenght)
+		return (len + dstsize);
+	while (src[i] != '\0' && i < dstsize - lenght - 1)
+	{
+		dst[lenght + i] = src[i];
+		i++;
+	}
+	dst[lenght + i] = '\0';
+	return (lenght + len);
 }
