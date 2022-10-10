@@ -1,13 +1,19 @@
 # **************************************************************************** #
 #                                                                              #
 #                                                         :::      ::::::::    #
-#    libft.a                                            :+:      :+:    :+:    #
+#    Makefile                                           :+:      :+:    :+:    #
 #                                                     +:+ +:+         +:+      #
-#    By: yloutfi <marvin@42.fr>                     +#+  +:+       +#+         #
+#    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
-#    Created: 2022/10/06 10:42:21 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/06 10:42:37 by yloutfi          ###   ########.fr        #
+#    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
+#    Updated: 2022/10/10 19:55:14 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
+objects = ft_*.com
 
+libft : $(objects)
+		cc -o libft $(objects)
+$(objects) : libft.h
+clean :
+		-rm libft $(objects)

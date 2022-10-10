@@ -6,11 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:55:02 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/08 15:59:26 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/10 11:50:33 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-size_t ft_strlcat(char * restrict dst, const char * restrict src, size_t dstsize)
+size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
     size_t	i;
 	size_t	lenght;
