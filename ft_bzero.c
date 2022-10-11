@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 21:45:56 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/08 14:51:25 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 19:13:46 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void ft_bzero(void *s, size_t n)
 {

@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 11:14:21 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/09 12:48:46 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:04:13 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 {

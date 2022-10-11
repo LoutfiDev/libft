@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 12:49:50 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/09 14:26:25 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:02:42 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_atoi(const char *str)
 {

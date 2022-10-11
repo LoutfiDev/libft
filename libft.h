@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/10 14:21:24 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 14:14:58 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,7 +14,6 @@
 #define LIBFT_H
 
 #include <stdlib.h>
-#include <stdio.h>
 #include <stdint.h>
 
 int ft_isalnum (int c);

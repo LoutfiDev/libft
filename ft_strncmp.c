@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 18:45:29 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/10 15:30:34 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:04:09 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int ft_strncmp(const char *s1, const char *s2, size_t n)
 {	

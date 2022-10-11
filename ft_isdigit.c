@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:02:55 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/08 20:25:04 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:03:09 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 int	ft_isdigit (int c)
 {

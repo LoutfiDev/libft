@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 20:26:14 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/10 15:34:33 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:03:14 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void *ft_memchr(const void *s, int c, size_t n)
 {

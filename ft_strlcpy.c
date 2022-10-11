@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:45:49 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/08 15:54:18 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:04:02 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 {

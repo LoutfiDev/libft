@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:15:36 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/08 19:05:33 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:03:25 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 void *ft_memset(void *b, int c, size_t len)
 {

@@ -6,9 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 17:20:06 by marvin            #+#    #+#             */
-/*   Updated: 2022/10/07 20:17:07 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/11 16:04:06 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
+
+#include "libft.h"
 
 size_t  ft_strlen (const char *str)
 {
