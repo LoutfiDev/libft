@@ -16,5 +16,6 @@
         "utility": "c",
         "vector": "c",
         "sstream": "c"
-    }
+    },
+    "C_Cpp.errorSquiggles": "Disabled"
 }

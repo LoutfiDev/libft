@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 16:17:50 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/11 16:03:28 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:15:06 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,11 +18,11 @@ char	*ft_strchr(const char *s, int c)
 	char *str = (char *)s;
 
 	i = 0;
-	if (c == 0)
-		return (str + ft_strlen(str)); // must include library
+	if((unsigned char)c == '\0')
+		return (str + ft_strlen(str)); 
 	while (str[i])
 	{
-		if (str[i] == c)
+		if ((unsigned char)str[i] == (unsigned char)c)
 		{
 			return (str + i);
 		}

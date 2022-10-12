@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 20:26:14 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/11 16:03:14 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/12 14:08:40 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,14 +15,13 @@
 void *ft_memchr(const void *s, int c, size_t n)
 {
     size_t	i;
-	char *str = (char *)s;
+	char *str;
 
 	i = 0;
-	if (c == 0)
-		return (str + ft_strlen(str)); // must include library
-	while (str[i] && i < n)
+	str = (char *)s;
+	while (i < n)
 	{
-		if (str[i] == c)
+		if ((unsigned char)str[i] == (unsigned char)c)
 		{
 			return (str + i);
 		}

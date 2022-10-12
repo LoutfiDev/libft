@@ -1,31 +1,26 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_memcmp.c                                        :+:      :+:    :+:   */
+/*   main.c                                             :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/09 11:21:58 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/12 11:26:32 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/12 15:39:47 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "libft.h"
 
-int ft_memcmp(const void *s1, const void *s2, size_t n)
+#include "libft.h"
+#include <string.h>
+#include <stdio.h>
+
+int main () 
 {
-    size_t	i;
-    char *str1;
-    char *str2;
-    
-	i = 0;
-	str1 = (char *)s1;
-	str2 = (char *)s2;
-	while (i < n)
-	{
-		if (!((unsigned char)str1[i] == (unsigned char)str2[i]))
-			return ((unsigned char)str1[i] - (unsigned char)str2[i]); 
-		i++;
-	}
-	return (0); 
+    char *s1 = "abcdef";
+	char *s2 = "abcdefghijklmnop";
+	size_t size = 6;
+    printf("%d\n",ft_strncmp(s1,s2,size));
+    printf("%d\n",strncmp(s1,s2,size));
+    return 0;
 }
