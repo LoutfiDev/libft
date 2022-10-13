@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:45:49 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/12 11:57:24 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/13 18:20:56 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -19,13 +19,12 @@ size_t	ft_strlcpy(char *dest, const char *src, size_t dstsize)
 
 	i = 0;
 	lenght = ft_strlen(src);
-	if (dstsize > 0)
+	if(!dstsize)
+		return (lenght);
+	while (src[i] && i < dstsize -1)
 	{
-		while (src[i] && i < dstsize -1)
-		{
-			dest[i] = src[i];
-			i++;
-		}
+		dest[i] = src[i];
+		i++;
 	}
 	dest[i] = '\0';
 	return (lenght);

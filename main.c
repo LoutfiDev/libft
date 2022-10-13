@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/12 15:39:47 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/13 20:17:14 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,10 +17,9 @@
 
 int main () 
 {
-    char *s1 = "abcdef";
-	char *s2 = "abcdefghijklmnop";
-	size_t size = 6;
-    printf("%d\n",ft_strncmp(s1,s2,size));
-    printf("%d\n",strncmp(s1,s2,size));
+    char *s = "++954";
+    printf("%d\n",atoi(s));
+    printf("%d\n",ft_atoi(s));
+    // printf("%s\n",s2);
     return 0;
 }

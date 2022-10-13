@@ -6,13 +6,16 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/11 14:14:58 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/13 20:05:01 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 #define LIBFT_H
 
+// for test only
+
+#include <limits.h>
 #include <stdlib.h>
 #include <stdint.h>
 
