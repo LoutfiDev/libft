@@ -6,15 +6,15 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 10:54:42 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/12 11:34:09 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 09:03:11 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isalpha (int c)
+int	ft_isalpha(int c)
 {
 	if ((c >= 65 && c <= 90) || (c >= 97 && c <= 122))
-		return 1;	
-	return 0;
+		return (1);
+	return (0);
 }

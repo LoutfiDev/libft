@@ -6,18 +6,18 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 11:14:21 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/13 19:22:02 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 09:09:34 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-char *ft_strnstr(const char *haystack, const char *needle, size_t len)
+char	*ft_strnstr(const char *haystack, const char *needle, size_t len)
 {
 	size_t	i;
 	size_t	j;
 	size_t	lenght;
-	char *str;
+	char	*str;
 
 	i = 0;
 	j = 0;
@@ -37,5 +37,5 @@ char *ft_strnstr(const char *haystack, const char *needle, size_t len)
 		if (j == lenght)
 			return (str + i - j);
 	}
-	return (0);   
+	return (0);
 }

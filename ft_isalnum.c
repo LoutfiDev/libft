@@ -6,15 +6,15 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:05:09 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/12 11:35:54 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 09:01:50 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int ft_isalnum (int c)
+int	ft_isalnum(int c)
 {
 	if (((c >= 65 && c <= 90) || (c >= 97 && c <= 122)) || (c >= 48 && c <= 57))
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }

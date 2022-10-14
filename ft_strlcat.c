@@ -6,15 +6,15 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 15:55:02 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/13 18:47:24 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 09:08:18 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-size_t ft_strlcat(char *dst, const char *src, size_t dstsize)
+size_t	ft_strlcat(char *dst, const char *src, size_t dstsize)
 {
-    size_t	i;
+	size_t	i;
 	size_t	length;
 	size_t	len;
 

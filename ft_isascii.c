@@ -6,16 +6,16 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 12:11:35 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/11 16:03:05 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 09:03:32 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-int	ft_isascii (int c)
+int	ft_isascii(int c)
 {
 	if (c >= 0 && c <= 127)
-		return 1;
-	return 0;
+		return (1);
+	return (0);
 }
 

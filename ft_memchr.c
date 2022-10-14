@@ -6,16 +6,16 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 20:26:14 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/12 14:08:40 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 09:04:40 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void *ft_memchr(const void *s, int c, size_t n)
+void	*ft_memchr(const void *s, int c, size_t n)
 {
-    size_t	i;
-	char *str;
+	size_t	i;
+	char	*str;
 
 	i = 0;
 	str = (char *)s;
