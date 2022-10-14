@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 09:17:10 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/14 17:22:00 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,6 +16,11 @@
 # include <limits.h>
 # include <stdlib.h>
 # include <stdint.h>
+
+// for test only
+# include <stdio.h>
+# include <string.h>
+
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);
@@ -40,6 +45,9 @@ int		ft_strncmp(const char *s1, const char *s2, size_t n);
 char	*ft_strnstr(const char *haystack, const char *needle, size_t len);
 char	*ft_strchr(const char *s, int c);
 char	*ft_strrchr(const char *s, int c);
+char	*ft_substr(char const *s, unsigned int start, size_t len);
+char	*ft_strjoin(char const *s1, char const *s2);
+char	*ft_strtrim(char const *s1, char const *set);
 
 char	*ft_strdup(const char *s1);
 int		ft_atoi(const char *str);

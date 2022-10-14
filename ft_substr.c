@@ -1,26 +1,37 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_substr.c                                        :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 18:56:48 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/14 09:28:42 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/14 12:46:29 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
-int	main()
+char	*ft_substr(char const *s, unsigned int start, size_t len)
 {
-	char *s1 = "/-+*Hel+lo+";
-	char *ret = ft_strtrim(s1, "/*-+");
+	char	*str;
+	char	*substr;
+	size_t	i;
 
-	printf("%s\n", ret);	
-
-	return (0);
+	if (!s)
+		return (0);
+	str = (char *)s;
+	i = 0;
+	substr = malloc(len * sizeof(char) + 1);
+	if (substr == NULL)
+		return (0);
+	if (start >= ft_strlen(str))
+		return (ft_strdup(""));
+	while (i < len)
+	{
+		substr[i] = str[start + i];
+		i++;
+	}
+	substr[i] = '\0';
+	return (substr);
 }
