@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:34:20 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/15 11:32:21 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/15 20:02:09 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -45,7 +45,7 @@ static unsigned int	ft_get_start(const char *s1, const char *set)
 		else
 			return (i);
 	}
-	return (0);
+	return (-1);
 }
 
 static int	ft_get_end(const char *s1, const char *set)
@@ -68,7 +68,7 @@ static int	ft_get_end(const char *s1, const char *set)
 		else
 			return (j);
 	}
-	return (0);
+	return (-1);
 }
 
 char	*ft_strtrim(char const *s1, char const *set)
@@ -82,6 +82,8 @@ char	*ft_strtrim(char const *s1, char const *set)
 		return (0);
 	start = ft_get_start(s1, set);
 	end = ft_get_end(s1, set);
+	if (start == (unsigned int)-1 || end == -1)
+		return (ft_strdup(""));
 	len = ft_strlen(s1) - start - end;
 	res = malloc(len * sizeof(char) + 1);
 	if (res == NULL)

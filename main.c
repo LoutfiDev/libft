@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/15 12:53:12 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/15 20:26:52 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,11 +16,8 @@
 
 int	main(void)
 {
-	char	*s1;
-	int		ret;
-
-	s1 = "123";
-	ret = ft_atoi(s1);
-	printf("%d\n", ret);
+	char 	s1[5] = "salam";
+	ft_memset(s1,1,4);
+	printf("%c\n", s1[3]);//
 	return (0);
 }
