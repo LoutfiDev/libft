@@ -6,11 +6,18 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 12:49:50 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 08:57:22 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/15 12:58:33 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+
+static int	ft_get_sign(char c)
+{
+	if (c == '-')
+		return (-1);
+	return (1);
+}
 
 int	ft_atoi(const char *str)
 {
@@ -19,16 +26,12 @@ int	ft_atoi(const char *str)
 	long	res;
 
 	i = 0;
-	sign = 1;
 	res = 0;
+	sign = 1;
 	while (str[i] && (str[i] == ' ' || (str[i] >= 9 && str[i] <= 13)))
 		i++;
-	if (str[i] == '-')
-	{
-		sign = -1;
-		i++;
-	}
-	i += str[i] == '+';
+	if (str[i] == '+' || str[i] == '-')
+		sign = ft_get_sign(str[i++]);
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
 		if (res * sign > INT_MAX)

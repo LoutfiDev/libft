@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 17:22:00 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/15 11:41:01 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -20,7 +20,6 @@
 // for test only
 # include <stdio.h>
 # include <string.h>
-
 
 int		ft_isalnum(int c);
 int		ft_isalpha(int c);

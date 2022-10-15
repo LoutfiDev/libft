@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/06 18:15:36 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 09:07:11 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/15 11:36:30 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,8 +21,8 @@ void	*ft_memset(void *b, int c, size_t len)
 	i = 0;
 	while (i < len)
 	{
-        str[i] = c;
-        i++;
+		str[i] = c;
+		i++;
 	}
 	return (b);
 }

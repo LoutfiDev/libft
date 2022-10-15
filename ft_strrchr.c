@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/08 17:47:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 09:10:06 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/15 11:38:36 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,4 +27,3 @@ char	*ft_strrchr(const char *s, int c)
 	}
 	return (NULL);
 }
-
