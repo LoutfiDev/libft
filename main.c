@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/15 20:26:52 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/16 16:30:52 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,8 +16,10 @@
 
 int	main(void)
 {
-	char 	s1[5] = "salam";
-	ft_memset(s1,1,4);
-	printf("%c\n", s1[3]);//
+	char haystack[30] = "aaabcabcd";
+    char needle[10] = "aacd";
+	char 	*ret;
+	ret = strnstr(haystack,needle,-1);
+	printf("%s\n", ret);//
 	return (0);
 }
