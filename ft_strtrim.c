@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 12:34:20 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/15 20:02:09 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/17 09:27:33 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -85,10 +85,6 @@ char	*ft_strtrim(char const *s1, char const *set)
 	if (start == (unsigned int)-1 || end == -1)
 		return (ft_strdup(""));
 	len = ft_strlen(s1) - start - end;
-	res = malloc(len * sizeof(char) + 1);
-	if (res == NULL)
-		return (0);
 	res = ft_substr(s1, start, len);
-	res[len + 1] = '\0';
 	return (res);
 }

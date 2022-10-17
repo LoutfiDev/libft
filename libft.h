@@ -6,19 +6,15 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/15 11:41:01 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/17 10:13:01 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
 
-# include <limits.h>
-# include <stdlib.h>
-# include <stdint.h>
 
-// for test only
-# include <stdio.h>
+# include <stdlib.h>
 # include <string.h>
 
 int		ft_isalnum(int c);
@@ -51,5 +47,6 @@ char	*ft_strtrim(char const *s1, char const *set);
 char	*ft_strdup(const char *s1);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
+char	**ft_split(char const *s, char c);
 
 #endif
