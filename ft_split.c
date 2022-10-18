@@ -6,22 +6,11 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:15:11 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/18 00:47:05 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/18 10:41:24 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-
-static char	*ft_free(char **array)
-{
-	int	i;
-
-	i = 0;
-	while (array[i])
-		free(array[i++]);
-	free(array);
-	return (NULL);
-}
 
 static int	ft_nbr_array(const char * str, char c)
 {
@@ -76,12 +65,7 @@ char	**ft_split(char const *s, char c)
 	while (i < nbr)
 	{
 		if (trimmed[j] != c)
-		{
-			big_array[i] = ft_fill_array(trimmed, c, &j);
-			if (!big_array[i])
-				ft_free(big_array);
-			i++;
-		}
+			big_array[i++] = ft_fill_array(trimmed, c, &j);
 		j++;
 	}
 	big_array[nbr] = NULL;
