@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 09:28:42 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/16 19:53:46 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/18 17:43:02 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -26,7 +26,7 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	if (start >= ft_strlen(str))
 		return (ft_strdup(""));
 	i = 0;
-	substr = malloc(len * sizeof(char) + 1);
+	substr = malloc((len + 1) * sizeof(char));
 	if (substr == NULL)
 		return (0);
 	while (i < len)
