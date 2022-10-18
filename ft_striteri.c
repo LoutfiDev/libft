@@ -1,33 +1,27 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_striteri.c                                      :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/18 20:46:23 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/18 18:49:33 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/18 20:47:53 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
 
-void	ft_test(unsigned int n, char *s)
+void	ft_striteri(char *s, void (*f)(unsigned int, char*))
 {
-	if (n == 1)
+	int	i;
+
+	if (!s || !f)
+		return ;
+	i = 0;
+	while (s[i])
 	{
-		*s = 'e';
+		f(i, s + i);
+		i++;
 	}
-}
-
-
-int	main(void)
-{
-	char	set[] = "hallo";
-	ft_striteri(set, &ft_test);
-	
-	printf("%s\n", set);
-	return (0);
 }
