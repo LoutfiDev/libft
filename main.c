@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/18 00:29:37 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/18 14:41:26 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -16,14 +16,8 @@
 
 int	main(void)
 {
-	// const char *str = "split  ||this  |for|me|||||!|";
-	char *s = "      split       this for   me  !       ";
- 	char **arr = ft_split(s, ' ');
-	int i = 0;
-	while(array[i])
-	{
-		printf("main: %s\n",array[i]);
-		i++;
-	}
+	int nb = 0;
+	char *s = ft_itoa(nb);
+	printf("%d\n",s[1]);
 	return (0);
 }

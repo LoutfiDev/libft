@@ -6,13 +6,13 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/17 10:15:11 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/18 10:41:24 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/18 14:48:27 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-static int	ft_nbr_array(const char * str, char c)
+static int	ft_nbr_array(const char *str, char c)
 {
 	int		i;
 	int		nbr;

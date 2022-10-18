@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 12:49:50 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/17 09:44:09 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/18 14:49:02 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -34,10 +34,6 @@ int	ft_atoi(const char *str)
 		sign = ft_get_sign(str[i++]);
 	while (str[i] && str[i] >= '0' && str[i] <= '9')
 	{
-		// if (res * sign > INT_MAX)
-		// 	return (-1);
-		// if (res * sign < INT_MIN)
-		// 	return (0);
 		res *= 10;
 		res += str[i++] - '0';
 	}

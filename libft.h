@@ -6,13 +6,12 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/17 23:38:14 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/18 14:47:43 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #ifndef LIBFT_H
 # define LIBFT_H
-
 
 # include <stdlib.h>
 # include <string.h>
@@ -49,5 +48,6 @@ char	*ft_strdup(const char *s1);
 int		ft_atoi(const char *str);
 void	*ft_calloc(size_t count, size_t size);
 char	**ft_split(char const *s, char c);
+char	*ft_itoa(int n);
 
 #endif
