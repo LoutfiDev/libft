@@ -1,39 +1,18 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putchar_fd.c                                    :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/19 10:47:02 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/19 08:47:23 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/19 10:46:08 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include<fcntl.h> 
-#include<errno.h> 
 
-int	main(void)
+void	ft_putchar_fd(char c, int fd)
 {
-	extern int	errno;
-	int			iofd;
-	char		c;
-	char		s;
-	mode_t		mode;
-
-	c = 'c';
-	mode = O_WRONLY | O_RDONLY;
-	iofd = creat("test.txt", mode);
-	if (iofd == -1)
-	{
-		printf("Error Number %d\n", errno);
-		perror("Program");
-	}
-	printf("iofd = %d\n", iofd);
-	ft_putchar_fd(c, iofd);
-	close(iofd);
-	return (0);
+	write(fd, &c, 1);
 }
