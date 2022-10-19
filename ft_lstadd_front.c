@@ -1,22 +1,19 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstadd_front.c                                  :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 10:56:29 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/19 16:38:49 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/19 15:48:21 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/19 18:02:50 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+void	ft_lstadd_front(t_list **lst, t_list *new)
 {
-	int	len;
-
-	len = ft_strlen(s);
-	write(fd, s, len);
-	write(fd, "\n", 1);
+	new->next = *lst;
+	*lst = new;
 }

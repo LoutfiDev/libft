@@ -6,33 +6,49 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/19 11:09:15 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/19 22:34:54 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 #include <string.h>
 #include <stdio.h>
-#include<fcntl.h> 
-#include<errno.h> 
+
+void	ft_lst_print(t_list *lst)
+{
+	int	i;
+
+	i = 0;
+	while (lst != NULL)
+	{
+		printf("%d : %s\n", i++, lst->content);
+		lst = lst->next;
+	}
+	printf("-----------------------\n");
+}
 
 int	main(void)
 {
-	extern int	errno;
-	int			iofd;
-	int			c;
-	mode_t		mode;
+	t_list	*head = NULL;
+	t_list	*second = NULL;
+	t_list	*added = NULL;
+	t_list	*last = NULL;
+	
+	head = (t_list *)malloc(sizeof(t_list));
+	second = (t_list *)malloc(sizeof(t_list));
 
-	c = 13354;
-	mode = O_WRONLY | O_RDONLY;
-	iofd = creat("test.txt", mode);
-	if (iofd == -1)
-	{
-		printf("Error Number %d\n", errno);
-		perror("Program");
-	}
-	printf("iofd = %d\n", iofd);
-	ft_putnbr_fd(c, iofd);
-	close(iofd);
+	head->content = "Head";
+	head->next = second;
+	second->content = "Second";
+	second->next = NULL;
+	added = ft_lstnew("added");
+	// ft_lst_print(head);
+	// ft_lstadd_front(&head, added);
+	// ft_lst_print(head);
+	// printf("%d\n",ft_lstsize(head));
+	// last = ft_lstlast(head);
+	// printf("content :%s\n",last->content);
+	// ft_lstadd_back(&head, added);
+	// ft_lst_print(head);
 	return (0);
 }

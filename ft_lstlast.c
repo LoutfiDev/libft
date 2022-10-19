@@ -1,22 +1,22 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   ft_putendl_fd.c                                    :+:      :+:    :+:   */
+/*   ft_lstlast.c                                       :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/19 10:56:29 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/19 16:38:49 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/19 19:50:03 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/19 20:19:25 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
 
-void	ft_putendl_fd(char *s, int fd)
+t_list	*ft_lstlast(t_list *lst)
 {
-	int	len;
-
-	len = ft_strlen(s);
-	write(fd, s, len);
-	write(fd, "\n", 1);
+	while (lst->next != NULL)
+	{
+		lst = lst->next;
+	}
+	return (lst);
 }
