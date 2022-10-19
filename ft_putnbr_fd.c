@@ -1,38 +1,35 @@
 /* ************************************************************************** */
 /*                                                                            */
 /*                                                        :::      ::::::::   */
-/*   main.c                                             :+:      :+:    :+:   */
+/*   ft_putnbr_fd.c                                     :+:      :+:    :+:   */
 /*                                                    +:+ +:+         +:+     */
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
-/*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/19 11:09:15 by yloutfi          ###   ########.fr       */
+/*   Created: 2022/10/19 11:02:05 by yloutfi           #+#    #+#             */
+/*   Updated: 2022/10/19 11:12:21 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
-#include <string.h>
-#include <stdio.h>
-#include<fcntl.h> 
-#include<errno.h> 
 
-int	main(void)
+void	ft_putnbr_fd(int n, int fd)
 {
-	extern int	errno;
-	int			iofd;
-	int			c;
-	mode_t		mode;
-
-	c = 13354;
-	mode = O_WRONLY | O_RDONLY;
-	iofd = creat("test.txt", mode);
-	if (iofd == -1)
+	if (n == -2147483648)
 	{
-		printf("Error Number %d\n", errno);
-		perror("Program");
+		ft_putnbr_fd(-214748364, fd);
+		ft_putchar_fd('8', fd);
 	}
-	printf("iofd = %d\n", iofd);
-	ft_putnbr_fd(c, iofd);
-	close(iofd);
-	return (0);
+	else if (n < 0)
+	{
+		ft_putchar_fd('-', fd);
+		ft_putnbr_fd(-n, fd);
+	}
+	else
+	{
+		if (n >= 10)
+		{
+			ft_putnbr_fd(n / 10, fd);
+		}
+		ft_putchar_fd(n % 10 + '0', fd);
+	}
 }
