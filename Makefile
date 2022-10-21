@@ -6,7 +6,7 @@
 #    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/19 16:37:23 by yloutfi          ###   ########.fr        #
+#    Updated: 2022/10/21 17:12:00 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -33,12 +33,12 @@ OBJS = ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o		\
 BONUS_SRCS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c 		\
 	ft_lstsize_bonus.c ft_lstlast_bonus.c 					\
 	ft_lstadd_back_bonus.c ft_lstdelone_bonus.c				\
-	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap.c				
+	ft_lstclear_bonus.c ft_lstiter_bonus.c ft_lstmap_bonus.c				
 
 BONUS_OBJS = ft_lstnew_bonus.o ft_lstadd_front_bonus.o		\
 	ft_lstsize_bonus.o ft_lstlast_bonus.o					\
 	ft_lstadd_back_bonus.o ft_lstdelone_bonus.o 			\
-	ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap.o				
+	ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o				
 	
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror

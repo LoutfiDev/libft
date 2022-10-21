@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/20 22:49:01 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/21 15:34:48 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -27,9 +27,19 @@ void	ft_lst_print(t_list *lst)
 	printf("-----------------------\n");
 }
 
-void ft_test(void *a)
+void	ft_test_iter(void *a)
 {
-	free(a);
+	char  *new = a;
+	for (int i = 0;new[i];i++)
+	{
+		new[i] = ft_toupper(new[i]);
+	}
+}
+
+void	*ft_test_map(void *a)
+{
+	a = ft_strdup("newmodi");
+	return (a);
 }
 
 int	main(void)
@@ -40,6 +50,7 @@ int	main(void)
 	t_list	*fourth = NULL;
 	t_list	*added = NULL;
 	t_list	*last = NULL;
+	t_list	*new = NULL;
 
 	head = (t_list *)malloc(sizeof(t_list));
 	second = (t_list *)malloc(sizeof(t_list));
@@ -55,7 +66,7 @@ int	main(void)
 	fourth->content = ft_strdup("fourth");
 	fourth->next = NULL;
 	// added = ft_lstnew("added");
-	// ft_lst_print(head);
+	ft_lst_print(head);
 	// ft_lstadd_front(&head, added);
 	// ft_lst_print(head);
 	// printf("%d\n",ft_lstsize(head));
@@ -65,7 +76,9 @@ int	main(void)
 	// ft_lst_print(head);
 	// ft_lstdelone(second, ft_test);
 	// printf("content :%s\n",second->content);
-	// ft_lstclear(&second, ft_test);
-	// ft_lst_print(head);
+	// ft_lstiter(second, ft_test);
+	// ft_lst_print(second);
+	new = ft_lstmap(head, ft_test_map,free);
+	ft_lst_print(new);
 	return (0);
 }
