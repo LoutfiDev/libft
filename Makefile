@@ -6,7 +6,7 @@
 #    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/21 17:12:00 by yloutfi          ###   ########.fr        #
+#    Updated: 2022/10/21 21:13:03 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -52,7 +52,7 @@ $(NAME) :
 
 bonus : 
 	$(CC) -c $(CFLAGS) $(BONUS_SRCS)
-	ar -rc $(NAME) $(BONUS_OBJS)
+	ar -rs $(NAME) $(BONUS_OBJS)
 
 clean :
 	-rm -f $(OBJS)

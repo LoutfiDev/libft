@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/21 10:38:54 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/21 17:23:39 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/21 21:23:25 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -22,10 +22,9 @@ t_list	*ft_lstmap(t_list *lst, void *(*f)(void *), void (*del)(void *))
 	head = NULL;
 	while (lst)
 	{
-		if(head == NULL)
+		if (head == NULL)
 		{
 			head = ft_lstnew(f(lst->content));
-			head->next = new;
 			lst = lst->next;
 		}
 		else

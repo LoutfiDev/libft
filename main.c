@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/12 10:44:43 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/21 15:34:48 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/21 21:22:15 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -38,7 +38,16 @@ void	ft_test_iter(void *a)
 
 void	*ft_test_map(void *a)
 {
-	a = ft_strdup("newmodi");
+	int i;
+	char *s;
+
+	i = 0;
+	s = (char *)a;
+	while(s[i])
+	{
+		s[i] = ft_toupper(s[i]);
+		i++;
+	}
 	return (a);
 }
 
