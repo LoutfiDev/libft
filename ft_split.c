@@ -14,43 +14,40 @@
 
 static int	ft_nbr_array(const char *str, char c)
 {
-	int		i;
-	int		nbr;
+	int i;
+	int count;
 
-	nbr = 0;
-	if (!str)
+	i = 0;
+	count = 0;
+	if (str == 0)
 		return (0);
-	while (*str)
+	if (str[0] != c && str[0])
+		count++;
+	while (i < (int)ft_strlen(str))
 	{
-		i = 0;
-		while (str[i] == c && str[i])
-			i++;
-		while (str[i] != c && str[i])
-			i++;
-		while (str[i] == c && str[i])
-			i++;
-		nbr++;
-		str += i;
+		if (str[i] == c && str[i + 1] != c && str[i + 1])
+			count++;
+		i++;
 	}
-	return (nbr);
+	return (count);
 }
 
 static char	*ft_fill_array(const char *str, char c, int *j)
 {
 	int		start;
-	int		lenght;
+	int		length;
 
 	start = *j;
-	lenght = 0;
+	length = 0;
 	while (str[*j] != c && str[*j])
 	{
 		(*j)++;
-		lenght++;
+		length++;
 	}
-	return (ft_substr(str, start, lenght));
+	return (ft_substr(str, start, length));
 }
 
-char	**ft_free_tab(char **big_array)
+static char	**ft_free_tab(char **big_array)
 {
 	int	i;
 

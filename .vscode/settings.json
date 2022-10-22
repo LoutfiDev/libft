@@ -17,5 +17,8 @@
         "vector": "c",
         "sstream": "c"
     },
-    "C_Cpp.errorSquiggles": "Disabled"
+    "C_Cpp.errorSquiggles": "Disabled",
+    "cSpell.words": [
+        "yloutfi"
+    ]
 }

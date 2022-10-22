@@ -17,7 +17,7 @@
 
 int	main(void)
 {
-	char *string = " ";
+	char *string = "a";
 	char **result = ft_split(string, ' ');
 	int i = 0;
 	while (result[i])
