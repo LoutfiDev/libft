@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/10 11:44:31 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/21 10:39:53 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/22 17:58:10 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -14,8 +14,6 @@
 # define LIBFT_H
 
 # include <stdlib.h>
-# include <string.h>
-# include <stdio.h>
 # include <unistd.h>
 
 typedef struct s_list

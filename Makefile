@@ -6,7 +6,7 @@
 #    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/21 21:13:03 by yloutfi          ###   ########.fr        #
+#    Updated: 2022/10/22 10:12:54 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -55,7 +55,7 @@ bonus :
 	ar -rs $(NAME) $(BONUS_OBJS)
 
 clean :
-	-rm -f $(OBJS)
+	-rm -f $(OBJS) $(BONUS_OBJS)
 		
 fclean : clean
 	-rm -f $(NAME)
