@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 12:49:50 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/22 17:59:34 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/23 14:25:35 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -21,9 +21,9 @@ static int	ft_get_sign(char c)
 
 int	ft_atoi(const char *str)
 {
-	int			i;
-	int			sign;
-	long long	res;
+	int					i;
+	int					sign;
+	unsigned long long	res;
 
 	i = 0;
 	res = 0;
@@ -37,7 +37,9 @@ int	ft_atoi(const char *str)
 		res *= 10;
 		res += str[i++] - '0';
 	}
-	if (sign == -1)
-		res = -res;
-	return (res);
+	if (res > LLONG_MAX && sign == -1)
+		return (0);
+	if (res > LLONG_MAX && sign == 1)
+		return (-1);
+	return ((int)res * sign);
 }

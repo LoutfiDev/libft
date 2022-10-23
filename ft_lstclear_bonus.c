@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/20 21:32:56 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/21 16:25:15 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/23 12:05:34 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -15,7 +15,7 @@
 void	ft_lstclear(t_list **lst, void (*del)(void*))
 {
 	t_list	*tmp;
-	
+
 	if (!lst || !del)
 		return ;
 	while (*lst)

@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 14:55:36 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/15 11:35:16 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/23 09:40:10 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -17,9 +17,9 @@ void	*ft_calloc(size_t count, size_t size)
 	void	*ptr;
 	size_t	lenght;
 
-	if ((count >= SIZE_MAX || size >= SIZE_MAX))
-		return (NULL);
 	lenght = count * size;
+	if (lenght >= SIZE_MAX)
+		return (NULL);
 	ptr = malloc(lenght);
 	if (ptr == NULL)
 		return (0);

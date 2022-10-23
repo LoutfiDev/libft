@@ -6,7 +6,7 @@
 #    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/22 10:12:54 by yloutfi          ###   ########.fr        #
+#    Updated: 2022/10/23 11:19:54 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -18,7 +18,7 @@ SRCS = ft_atoi.c ft_bzero.c ft_calloc.c ft_isalnum.c		\
 	ft_strnstr.c ft_strrchr.c ft_tolower.c ft_toupper.c 	\
 	ft_substr.c ft_strjoin.c ft_strtrim.c ft_split.c 		\
 	ft_itoa.c ft_strmapi.c ft_putchar_fd.c ft_putstr_fd.c	\
-	ft_putendl_fd.c ft_putnbr_fd.c
+	ft_putendl_fd.c ft_putnbr_fd.c ft_striteri.c
 
 OBJS = ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o		\
 	ft_isalpha.o ft_isdigit.o ft_isascii.o ft_isprint.o 	\
@@ -28,7 +28,7 @@ OBJS = ft_atoi.o ft_bzero.o ft_calloc.o ft_isalnum.o		\
 	ft_strnstr.o ft_strrchr.o ft_tolower.o ft_toupper.o 	\
 	ft_substr.o ft_strjoin.o ft_strtrim.o ft_split.o 		\
 	ft_itoa.o ft_strmapi.o ft_putchar_fd.o ft_putstr_fd.o	\
-	ft_putendl_fd.o ft_putnbr_fd.o
+	ft_putendl_fd.o ft_putnbr_fd.o ft_striteri.o
 
 BONUS_SRCS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c 		\
 	ft_lstsize_bonus.c ft_lstlast_bonus.c 					\
@@ -42,7 +42,7 @@ BONUS_OBJS = ft_lstnew_bonus.o ft_lstadd_front_bonus.o		\
 	
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror
-CC = gcc
+CC = cc
 
 all : $(NAME)
 
