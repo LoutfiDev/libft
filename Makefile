@@ -6,7 +6,7 @@
 #    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/23 11:19:54 by yloutfi          ###   ########.fr        #
+#    Updated: 2022/10/25 23:39:59 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -46,13 +46,11 @@ CC = cc
 
 all : $(NAME)
 
-$(NAME) : 
-	$(CC) -c $(CFLAGS) $(SRCS)
+$(NAME) : $(OBJS)
 	ar -rc $(NAME) $(OBJS)
 
-bonus : 
-	$(CC) -c $(CFLAGS) $(BONUS_SRCS)
-	ar -rs $(NAME) $(BONUS_OBJS)
+bonus : $(BONUS_OBJS)
+	ar -rc $(NAME) $(BONUS_OBJS)
 
 clean :
 	-rm -f $(OBJS) $(BONUS_OBJS)
