@@ -6,7 +6,7 @@
 #    By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/10/10 19:06:54 by yloutfi           #+#    #+#              #
-#    Updated: 2022/10/25 23:39:59 by yloutfi          ###   ########.fr        #
+#    Updated: 2022/10/26 10:16:34 by yloutfi          ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
@@ -38,7 +38,7 @@ BONUS_SRCS = ft_lstnew_bonus.c ft_lstadd_front_bonus.c 		\
 BONUS_OBJS = ft_lstnew_bonus.o ft_lstadd_front_bonus.o		\
 	ft_lstsize_bonus.o ft_lstlast_bonus.o					\
 	ft_lstadd_back_bonus.o ft_lstdelone_bonus.o 			\
-	ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o				
+	ft_lstclear_bonus.o ft_lstiter_bonus.o ft_lstmap_bonus.o			
 	
 NAME = libft.a
 CFLAGS = -Wall -Wextra -Werror
@@ -46,11 +46,11 @@ CC = cc
 
 all : $(NAME)
 
-$(NAME) : $(OBJS)
-	ar -rc $(NAME) $(OBJS)
-
 bonus : $(BONUS_OBJS)
-	ar -rc $(NAME) $(BONUS_OBJS)
+	ar rc $(NAME) $(BONUS_OBJS)
+	
+$(NAME) : $(OBJS)
+	ar rc $(NAME) $(OBJS)
 
 clean :
 	-rm -f $(OBJS) $(BONUS_OBJS)
