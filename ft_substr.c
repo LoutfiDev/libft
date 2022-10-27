@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/14 09:28:42 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/18 17:43:02 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/27 18:17:17 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,9 +18,9 @@ char	*ft_substr(char const *s, unsigned int start, size_t len)
 	char	*substr;
 	size_t	i;
 
-	str = (char *)s;
-	if (!str)
+	if (!s)
 		return (0);
+	str = (char *)s;
 	if (start + len > ft_strlen(str))
 		len = ft_strlen(str) - start;
 	if (start >= ft_strlen(str))

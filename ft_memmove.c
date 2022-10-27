@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/07 18:22:37 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/14 09:06:34 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/27 11:44:20 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -18,24 +18,20 @@ void	*ft_memmove(void *dst, const void *src, size_t len)
 	char	*s;
 	size_t	i;
 
+	if (!dst && !src)
+		return (NULL);
 	d = (char *)dst;
 	s = (char *)src;
 	i = 0;
-	if (d < s)
+	if (d > s)
 	{
-		while (i < len && (d != 0 || s != 0))
-		{
-			d[i] = s[i];
-			i++;
-		}
-	}
-	else if (d > s)
-	{
-		while (len > 0 && (d != 0 || s != 0))
+		while (len > 0)
 		{
 			len --;
 			d[len] = s[len];
 		}
 	}
+	else
+		ft_memcpy(dst, src, len);
 	return (dst);
 }

@@ -6,7 +6,7 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/09 12:49:50 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/25 23:41:28 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/27 15:36:34 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
@@ -64,5 +64,5 @@ int	ft_atoi(const char *str)
 		return (0);
 	if ((m >= 20 || res > LLONG_MAX) && sign == 1)
 		return (-1);
-	return ((int)res * sign);
+	return (res * sign);
 }

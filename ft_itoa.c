@@ -6,11 +6,12 @@
 /*   By: yloutfi <soulang.dev@gmail.com>            +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/10/18 10:48:58 by yloutfi           #+#    #+#             */
-/*   Updated: 2022/10/20 17:22:36 by yloutfi          ###   ########.fr       */
+/*   Updated: 2022/10/27 17:28:48 by yloutfi          ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
 #include "libft.h"
+#include <stdio.h>
 
 static int	ft_get_lengh(int nb)
 {
